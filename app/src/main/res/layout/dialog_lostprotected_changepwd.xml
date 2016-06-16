@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/BLACK"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="修改密码"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/WHITE"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/et_changepwd_oldpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/WHITE"
+        android:hint="请先输入原密码"
+        android:inputType="textPassword"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/et_changepwd_newpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/WHITE"
+        android:hint="请输入新密码"
+        android:inputType="textPassword"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/et_changepwd_newpwd_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/WHITE"
+        android:hint="请再次输入新密码"
+        android:inputType="textPassword"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_changepwd_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确 定" />
+
+        <Button
+            android:id="@+id/btn_changepwd_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取 消" />
+    </LinearLayout>
+
+</LinearLayout>

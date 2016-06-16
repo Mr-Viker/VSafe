@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/tb_protectedsetup2"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            style="@style/text_title_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2.绑定手机卡" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        style="@style/text_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一旦绑定SIM卡\n下次重启手机如果SIM卡发生变化，就向安全号码发送短信" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_protectedsetup2_bind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/protectedsetup2_item_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:padding="5dp"
+                android:text="点击绑定SIM卡"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:id="@+id/iv_protectedsetup2_bindstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:src="@drawable/switch_off_normal" />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/image_logo_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/protectedsetup2_bind" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:gravity="center">
+
+
+            <ImageView
+                style="@style/image_offline_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                style="@style/image_online_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                style="@style/image_offline_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                style="@style/image_offline_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_protectedsetup2_previous"
+            style="@style/previous_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_protectedsetup2_next"
+            style="@style/next_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>

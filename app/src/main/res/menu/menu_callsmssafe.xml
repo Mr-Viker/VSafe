@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@android:drawable/ic_menu_add"
+        android:id="@+id/add_black_number"
+        android:title="添加黑名单"
+        app:showAsAction="never" />
+
+    <item
+        android:icon="@android:drawable/ic_menu_delete"
+        android:id="@+id/delete_all_black_number"
+        android:title="批量删除"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/setting"
+        android:title="设置"
+        app:showAsAction="never" />
+
+
+</menu>

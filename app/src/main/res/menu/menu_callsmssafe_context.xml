@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/delete_black_number"
+        android:title="删 除" />
+
+    <item
+        android:id="@+id/update_blacknumber"
+        android:title="修 改" />
+
+</menu>

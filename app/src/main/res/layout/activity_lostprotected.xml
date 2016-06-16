@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_lostprotected"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            style="@style/text_title_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="手机防盗" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_content_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安全号码：" />
+
+        <TextView
+            android:id="@+id/tv_lostprotected_safenumber"
+            style="@style/text_content_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="5556" />
+
+    </LinearLayout>
+
+    <TextView style="@style/list_devider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            style="@style/text_content_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="防盗保护设置" />
+
+        <TextView
+            android:id="@+id/tv_lostprotected_protectstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="未开启"
+            android:textColor="@color/RED"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <TextView style="@style/list_devider" />
+
+    <TextView
+        android:id="@+id/tv_lostprotected_changepwd"
+        style="@style/text_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="修改密码" />
+
+    <TextView style="@style/list_devider" />
+
+    <TextView
+        android:id="@+id/tv_lostprotected_reset"
+        style="@style/text_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="重新进入设置向导" />
+
+    <TextView style="@style/list_devider" />
+
+
+    <TextView
+        style="@style/text_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="手机防盗指令:\n#*location*#获取手机位置\n#*alarm*#播放报警音乐\n#*locksrceen*#远程锁屏\n#*wipedata*#清除数据" />
+
+</LinearLayout>

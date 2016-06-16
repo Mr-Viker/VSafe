@@ -1,0 +1,123 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/BLACK</item>
+    </style>
+
+
+
+
+
+
+
+    <!--设置向导页面的共同样式-->
+
+    <!--标题栏-->
+    <style name="text_title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/WHITE</item>
+        <item name="android:textSize">24sp</item>
+
+    </style>
+
+    <!--提醒内容-->
+    <style name="text_content_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!--页面logo-->
+    <style name="image_logo_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!--页面中的小白点-->
+    <style name="image_online_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@android:drawable/presence_online</item>
+    </style>
+
+    <style name="image_offline_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@android:drawable/presence_offline</item>
+    </style>
+
+    <!--上一步-->
+    <style name="previous_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:text">上一步</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:drawableLeft">@drawable/previous</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+    <!--下一步-->
+    <style name="next_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:text">下一步</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:drawableRight">@drawable/next</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+
+    <!--设置向导第一步中的四个子项样式-->
+    <style name="image_start_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@android:drawable/star_big_on</item>
+    </style>
+
+    <!--设置向导第一步中的四个子项样式-->
+    <style name="text_start_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--列表选项间的分割线-->
+    <style name="list_devider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@drawable/listview_devider</item>
+    </style>
+
+
+    <!--activity_appmanager中顶部内存数据的显示风格-->
+    <style name="text_memory_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/BLACK</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+</resources>

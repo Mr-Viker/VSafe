@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_antivirus"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            style="@style/text_title_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="手机杀毒" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_antivirus_container0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb_antivirus"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_scanner_malware" />
+
+            <ImageView
+                android:id="@+id/iv_antivirus_scan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/antivirus_scan" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_antivirus_status"
+                style="@style/text_content_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="一切准备就绪"
+                android:textColor="@color/BLACK" />
+
+            <ProgressBar
+                android:id="@+id/pb_antivirus_scanprogress"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_antivirus_container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_antivirus_container0"
+        android:layout_margin="5dp">
+
+        <TextView
+            style="@style/text_content_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描状态"
+            android:textColor="@color/BLACK" />
+
+        <Button
+            android:id="@+id/btn_antivirus_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="清 理"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_antivirus_container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_antivirus_container1"
+        android:layout_marginBottom="50dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_antivirus_scanstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_antivirus_scan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/BLUEDARK"
+            android:padding="5dp"
+            android:text="扫  描"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
