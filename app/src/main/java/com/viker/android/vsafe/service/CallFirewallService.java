@@ -1,4 +1,4 @@
-/*package com.viker.android.vsafe.service;
+package com.viker.android.vsafe.service;
 
 import android.app.Service;
 import android.content.Intent;
@@ -7,14 +7,16 @@ import android.support.annotation.Nullable;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 
+import com.android.internal.telephony.ITelephony;
 import com.viker.android.vsafe.db.BlackNumberDao;
 
 import java.lang.reflect.Method;
 
-*//**
- * Created by Viker on 2016/6/2.
- * 实现黑名单电话拦截功能的服务类，属于通信卫士中，根据设置中心的开关来开启或关闭服务。
- *//*
+/**
+* Created by Viker on 2016/6/2.
+* 实现黑名单电话拦截功能的服务类，属于通信卫士中，根据设置中心的开关来开启或关闭服务。
+*/
+
 public class CallFirewallService extends Service {
 
     private static final String TAG = "CallFirewallService";
@@ -34,8 +36,7 @@ public class CallFirewallService extends Service {
         return null;
     }
 
-    *//*第一次创建服务时调用*//*
-
+    //第一次创建服务时调用
     @Override
     public void onCreate() {
         super.onCreate();
@@ -48,8 +49,7 @@ public class CallFirewallService extends Service {
         telephonyManager.listen(listener, PhoneStateListener.LISTEN_CALL_STATE);
     }
 
-    *//*在销毁服务时注销监听器*//*
-
+    //在销毁服务时注销监听器
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -57,7 +57,7 @@ public class CallFirewallService extends Service {
         listener = null;
     }
 
-    *//*自定义监听器MyPhoneListener继承自PhoneStateListener类，实现监听电话状态的改变*//*
+    //自定义监听器MyPhoneListener继承自PhoneStateListener类，实现监听电话状态的改变
     private class MyPhoneListener extends PhoneStateListener {
         @Override
         public void onCallStateChanged(int state, String incomingNumber) {
@@ -101,7 +101,7 @@ public class CallFirewallService extends Service {
     }
 
 
-}*/
+}
 
 
 
